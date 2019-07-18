@@ -1,8 +1,12 @@
+//File Name StudentList.java
+//The code contains some data in a data file names StudentList.txt
+//
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
 public class StudentList {
-	public static void main(String[] args) {
+        public static void main(String[] args) {
 
 //		Check arguments
 		if(args[0].equals("a")) {
@@ -22,8 +26,8 @@ public class StudentList {
 			System.out.println("Loading data ...");
 			try {
 			BufferReader s = new BufferReader(
-					new InputStreamReader(
-                    new FileInputStream("students.txt")));
+                new InputStreamReader(
+                new FileInputStream("students.txt")));
 			String r = s.readLine();
 			System.out.println(r);
 			String i[] = r.split(",");
